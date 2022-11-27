@@ -1,5 +1,6 @@
-import { Component } from 'react'
-import './app.scss'
+import { Component } from 'react';
+import 'taro-ui/dist/style/index.scss';
+import './app.scss';
 
 class App extends Component {
 
