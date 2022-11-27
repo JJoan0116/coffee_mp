@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from '@tarojs/components';
-import { AtButton } from 'taro-ui';
-import './index.scss';
+import { View, Text, Swiper, SwiperItem } from '@tarojs/components';
+import Banner from './components/banner';
+import styles from './index.module.scss';
 
 export default class Index extends Component {
   componentWillMount() {}
@@ -15,9 +15,10 @@ export default class Index extends Component {
   componentDidHide() {}
 
   render() {
+    console.log(1111, styles);
     return (
-      <View className='index'>
-        <Text>menu</Text>
+      <View className={styles.wrap}>
+        <Banner />
       </View>
     );
   }
