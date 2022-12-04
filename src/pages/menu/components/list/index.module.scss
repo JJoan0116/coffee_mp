@@ -12,6 +12,10 @@
       padding: 10px 10px 10px 0;
       margin-bottom: 20px;
 
+      &.activeMenu {
+        background-color: pink;
+      }
+
       .leftContent {
         padding: 10px 10px 10px 20px;
         border-top-right-radius: 30px;
@@ -25,17 +29,32 @@
   }
 
   .right {
-    overflow-y: auto;
     flex-grow: 1;
     padding: 20px;
     background-color: #9999991c;
 
     .rightContent {
-      border-radius: 20px;
-      background-color: #fff;
+      // border-radius: 20px;
+      // background-color: #fff;
     }
 
     .rightItem {
+      border-radius: 20px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      font-size: 32px;
+
+      .cardSubTitle {
+        font-size: 24px;
+        color: #999;
+      }
+    }
+
+    .coffeeItem {
       display: flex;
       padding: 20px;
 
