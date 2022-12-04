@@ -1,16 +1,19 @@
 import React, { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import { View, Text, Image, ScrollView, Swiper, SwiperItem } from '@tarojs/components';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { AtIcon, AtTabsPane } from 'taro-ui';
 import styles from './index.module.scss';
 import { mockMenu, mockList } from './mockData';
+import { actions } from '../../../../redux/cart/index';
 
 const List = () => {
-  // const [scrollIntoViewKey, setScrollIntoViewKey] = useState(0);
   const [activeKey, setActiveKey] = useState(0);
   const [menuList, setMenuList] = useState(mockMenu);
   const [list, setList] = useState(mockList);
   const [scrollTop, setScrollTop] = useState(0);
   const itemRef = useRef();
+  const dispatch = useDispatch();
 
   const heightBoundaryList = useMemo(() => {
     const heightList = [];
@@ -42,6 +45,13 @@ const List = () => {
     [heightBoundaryList],
   );
 
+  const onAddClick = useCallback(
+    (item) => {
+      dispatch(actions.addCart(item));
+    },
+    [dispatch],
+  );
+
   useEffect(() => {
     console.log('headerRef', itemRef);
   }, []);
@@ -68,21 +78,9 @@ const List = () => {
       <ScrollView
         className={styles.right}
         scrollY
-        // 在设置滚动条位置时使用动画过渡
         scrollWithAnimation
-        // 设置竖向滚动条位置
         scrollTop={scrollTop}
-        // 距底部多远时（单位px），触发 scrolltolower 事件
-        // lowerThreshold={Threshold}
-        // 距顶部多远时（单位px），触发 scrolltoupper 事件
-        // upperThreshold={Threshold}
-        // onScrollToLower={onScrollToLower}
-        // 滚动到顶部，会触发 scrolltoupper 事件
-        // onScrollToUpper={onScrollToUpper}
         onScroll={onScroll}
-        // 值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素
-        // scrollIntoView={{ scrollIntoViewKey }}
-        // showScrollbar={false}
       >
         {list.map((categoryItem, idx) => {
           const cardItem = categoryItem[0];
@@ -111,7 +109,10 @@ const List = () => {
                       <Text className={styles.discountPrice}>¥{item.discountPrice}</Text>
                     </View>
                   </View>
-                  <View className={`at-icon at-icon-add ${styles.icon}`}></View>
+                  <View
+                    className={`at-icon at-icon-add ${styles.icon}`}
+                    onClick={() => onAddClick(item)}
+                  ></View>
                 </View>
               ))}
             </View>

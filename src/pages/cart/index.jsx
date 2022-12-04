@@ -1,23 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { View, Text } from '@tarojs/components';
-import './index.scss';
+import { useSelector } from 'react-redux';
+import './index.module.scss';
 
-export default class Index extends Component {
-  componentWillMount() {}
+const App = () => {
+  const { cartList } = useSelector(({ cart }) => {
+    console.log(1111, cart);
+    return cart;
+  });
+  return <View>1111</View>;
+};
 
-  componentDidMount() {}
-
-  componentWillUnmount() {}
-
-  componentDidShow() {}
-
-  componentDidHide() {}
-
-  render() {
-    return (
-      <View className='index'>
-        <Text>cart</Text>
-      </View>
-    );
-  }
-}
+export default App;
