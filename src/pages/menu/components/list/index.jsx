@@ -87,13 +87,13 @@ const List = () => {
           const itemList = categoryItem.slice(1);
           return (
             <View key={idx} className={styles.rightItem} ref={itemRef}>
-              <View className={styles.card} id={`card_${cardItem.id}`}>
+              <View className={styles.card}>
                 <View>{cardItem.title}</View>
                 <View className={styles.cardSubTitle}>{cardItem.subTitle}</View>
               </View>
 
               {itemList.map((item, index) => (
-                <View className={styles.coffeeItem} key={index} id={`product_${item.id}`}>
+                <View className={styles.coffeeItem} key={index}>
                   <Image src={item.imageUrl} className={styles.image} />
                   <View className={styles.info}>
                     <View>

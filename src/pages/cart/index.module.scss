@@ -1,2 +1,36 @@
 .wrap {
+  .item {
+    display: flex;
+    padding: 20px;
+
+    .image {
+      width: 140px;
+      height: 140px;
+    }
+
+    .info {
+      height: 100%;
+      flex-grow: 1;
+    }
+
+    .title {
+      font-size: 40px;
+    }
+
+    .label {
+      font-size: 24px;
+      color: #999;
+    }
+
+    .inputNum {
+      align-self: flex-end;
+      height: 70px;
+    }
+
+    .price {
+      font-size: 32px;
+      color: rgb(169, 11, 11);
+      font-weight: bold;
+    }
+  }
 }

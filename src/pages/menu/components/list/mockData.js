@@ -17,13 +17,12 @@ export const mockList = [
   // 人气Top
   [
     {
-      id: 0,
       type: 'card',
       title: '人气Top',
       subTitle: '必喝爆款，瑞幸精品',
     },
     {
-      id: '0-0',
+      id: 1,
       title: '人气Top',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -32,8 +31,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '0-1',
-
+      id: 2,
       title: '人气Top',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -42,8 +40,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '0-2',
-
+      id: 3,
       title: '人气Top',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -52,8 +49,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '0-3',
-
+      id: 4,
       title: '人气Top',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -62,7 +58,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '0-4',
+      id: 5,
       title: '人气Top',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -74,14 +70,12 @@ export const mockList = [
   // 生酪拿铁
   [
     {
-      id: 1,
       type: 'card',
       title: '生酪拿铁',
       subTitle: '必喝爆款，瑞幸精品',
     },
     {
-      id: '1-0',
-
+      id: 6,
       title: '生酪拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -90,8 +84,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '1-1',
-
+      id: 7,
       title: '生酪拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -100,8 +93,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '1-2',
-
+      id: 8,
       title: '生酪拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -110,8 +102,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '1-3',
-
+      id: 9,
       title: '生酪拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -120,8 +111,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '1-4',
-
+      id: 10,
       title: '生酪拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -130,8 +120,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '1-5',
-
+      id: 11,
       title: '生酪拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -140,8 +129,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '1-6',
-
+      id: 12,
       title: '生酪拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -153,14 +141,12 @@ export const mockList = [
   // 丝绒拿铁
   [
     {
-      id: 2,
       type: 'card',
       title: '丝绒拿铁',
       subTitle: '必喝爆款，瑞幸精品',
     },
     {
-      id: '2-0',
-
+      id: 13,
       title: '丝绒拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -169,8 +155,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '2-1',
-
+      id: 14,
       title: '丝绒拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -179,8 +164,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '2-2',
-
+      id: 15,
       title: '丝绒拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
@@ -189,8 +173,7 @@ export const mockList = [
       imageUrl: coffeePng,
     },
     {
-      id: '2-3',
-
+      id: 16,
       title: '丝绒拿铁',
       desc: '2022拿铁冠军',
       originalPrice: 32,
